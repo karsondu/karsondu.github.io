@@ -8,8 +8,8 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #fff;
-            color: #222;
+            background: #111; /* Dark background */
+            color: #eee; /* Light text */
         }
 
         nav {
@@ -17,8 +17,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 1.2rem 2rem;
-            background-color: #f7f7f7;
-            border-bottom: 1px solid #ddd;
+            background-color: #1c1c1c; /* Dark nav */
+            border-bottom: 1px solid #333;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -27,16 +27,18 @@
             nav .name {
                 font-weight: bold;
                 font-size: 1.2rem;
+                color: #fff;
             }
 
             nav .links a {
                 margin-left: 1.5rem;
                 text-decoration: none;
-                color: #333;
+                color: #ccc;
             }
 
                 nav .links a:hover {
                     text-decoration: underline;
+                    color: #fff;
                 }
 
         main {
@@ -46,11 +48,11 @@
         }
 
         h1, h2, h3 {
-            margin-bottom: 0.5rem;
+            color: #fff;
         }
 
         h2 {
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #444;
             padding-bottom: 0.3rem;
             margin-top: 2rem;
         }
@@ -59,22 +61,16 @@
             padding-left: 1.2rem;
         }
 
-        .section {
-            margin-bottom: 2rem;
+        a {
+            color: #80bfff;
         }
 
-        .item {
-            margin-bottom: 1rem;
-        }
+            a:hover {
+                color: #b3d1ff;
+            }
 
-        .item-title {
-            font-weight: bold;
-        }
-
-        .item-sub {
-            color: #555;
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
+        .item-sub, .project-desc, .post-desc {
+            color: #bbb;
         }
 
         footer {
@@ -82,8 +78,9 @@
             padding: 2rem;
             text-align: center;
             font-size: 0.9rem;
-            color: #666;
+            color: #777;
         }
+
     </style>
 </head>
 <body>
