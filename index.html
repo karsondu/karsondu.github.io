@@ -1,125 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karson Du</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #111; /* Dark background */
-            color: #eee; /* Light text */
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 2rem;
-            background-color: #1c1c1c; /* Dark nav */
-            border-bottom: 1px solid #333;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-            nav .name {
-                font-weight: bold;
-                font-size: 1.2rem;
-                color: #fff;
-            }
-
-            nav .links a {
-                margin-left: 1.5rem;
-                text-decoration: none;
-                color: #ccc;
-            }
-
-                nav .links a:hover {
-                    text-decoration: underline;
-                    color: #fff;
-                }
-
-        main {
-            max-width: 800px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        h1, h2, h3 {
-            color: #fff;
-        }
-
-        h2 {
-            border-bottom: 1px solid #444;
-            padding-bottom: 0.3rem;
-            margin-top: 2rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        a {
-            color: #80bfff;
-        }
-
-            a:hover {
-                color: #b3d1ff;
-            }
-
-        .item-sub, .project-desc, .post-desc {
-            color: #bbb;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-                nav .links {
-                    margin-top: 0.5rem;
-                }
-        }
-    </style>
+    
+    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <nav>
-        <div class="name">Karson Du</div>
-        <div class="links">
-            <a href="cv.html">CV</a>
-            <a href="projects.html">Projects</a>
-            <a href="misc.html">Misc</a>
-        </div>
+    <nav class="top-bar">
+        <a href ="cv.html">CV</a>
+        <a href ="projects.html">Projects</a>
     </nav>
+    
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Karson Du</h1>
+            <p>
+                Heyyy! I'm Karson, a recent grad with a double major in computer science and data science from UC Berkeley.
+            </p>
+            <p>Feel free to get in touch with me anywhere below!!<br/>
+                Email: <a href="mailto:karsondu@berkeley.edu">karsondu@berkeley.edu</a><br />
+                LinkedIn: <a href="https://www.linkedin.com/in/karson-du/">linkedin.com/in/karson-du</a> 
+            </p>
+        </div>
 
-    <main>
-        <!-- do <p> for paragraphs-->
-        <h1>Karson Du</h1>
-        <p>Hello! I'm Karson, a recent graduate in Computer Science and Data Science from UC Berkeley</p>
-        <p>In my spare time, I like to play sports (badminton & basketball), videogames, watching sports (Seahawks, Lakers, Dodgers), and exploring new places!</p>
-        <p>Feel free to contact me anywhere below!!<br />
-        Email: <a href="mailto:karsondu@berkeley.edu">karsondu@berkeley.edu</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/karson-du/">linkedin.com/in/karson-du</a>       
-        </p>
-        
-    </main>
+        <div class="profile-picture">
+            <img src="image.jpg" alt="Photo of Karson Du">
+        </div>
+    </section>
 
-    <footer>
-        &copy; 2025 Karson Du
-    </footer>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+.top-bar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: gray;
+}
+
+.top-bar a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 100px auto;
+    border: 3px solid black;
+}
+
+.intro-text {
+    width: 58%;
+    color:black;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    font-size: 30px;
+    margin: 0 20px;
+    transition: transform 0.2s ease;
+}
+
+.project.expanded .arrow {
+    transform: rotate(270deg);
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-details {
+    display: none;
+}
+
+.project.expanded .project-details {
+    display: block;
+}
+.project.expanded .project-summary {
+    display: none;
+}
+
+.project-video {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 30px;
+    display: none;
+}
+
+.project.expanded .project-video {
+    display: block;
+}
+

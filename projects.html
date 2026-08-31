@@ -1,118 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Karson Du | Projects</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #111; /* Dark background */
-            color: #eee; /* Light text */
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 2rem;
-            background-color: #1c1c1c; /* Dark nav */
-            border-bottom: 1px solid #333;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+        <title>CV | Karson Du</title>
 
-            nav .name {
-                font-weight: bold;
-                font-size: 1.2rem;
-                color: #fff;
-            }
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-            nav .links a {
-                margin-left: 1.5rem;
-                text-decoration: none;
-                color: #ccc;
-            }
+    <body>
+        <nav class="top-bar">
+            <a href ="index.html">Home</a>
+            <a href ="cv.html">CV</a>
+        </nav>
 
-                nav .links a:hover {
-                    text-decoration: underline;
-                    color: #fff;
-                }
-
-        main {
-            max-width: 800px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        h1, h2, h3 {
-            color: #fff;
-        }
-
-        h2 {
-            border-bottom: 1px solid #444;
-            padding-bottom: 0.3rem;
-            margin-top: 2rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        a {
-            color: #80bfff;
-        }
-
-            a:hover {
-                color: #b3d1ff;
-            }
-
-        .item-sub, .project-desc, .post-desc {
-            color: #bbb;
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="name">Karson Du</div> <!-- Replace with your name -->
-        <div class="links">
-            <a href="index.html">About</a>
-            <a href="cv.html">CV</a>
-            <a href="misc.html">Misc</a>
-        </div>
-    </nav>
-
-    <main>
         <h1>Projects</h1>
 
-        <div class="project">
-            <div class="project-title">
-                <a href="https://cal-cs184-student.github.io/hw-webpages-pork-chopped-website/">UC Berkeley CS184 Projects</a>
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h2>Pose Recognition</h2>
+                        <span class="arrow">←</span>
+                    </div>
+
+                    <p class="project-summary">
+                        A project that uses computer vision and a PyTorch neural network
+                        to recognize a user's pose.
+                    </p>
+
+                    <div class="project-details">
+                        <p>
+                            Extended description of the project goes here.
+                        </p>
+
+                        <a href="YOUR_GITHUB_LINK">View on GitHub</a>
+                    </div>
+                </div>  
+
+                <div class="project-video">
+                    <!-- Video will go here later -->
+                </div>
             </div>
-            <div class="project-desc">
-                A collection of projects for UC Berkeley's computer graphics course
+            
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-title">
+                        <h2>UC Berkeley CS184 Projects</h2>
+                        <span class="arrow">←</span>
+                    </div>
+
+                    <p class="project-summary">
+                        A collection of projects for UC Berkeley's computer graphics course.
+                    </p>
+
+                    <div class="project-details">
+                        <p>
+                            Extended description of the project goes here.
+                        </p>
+
+                        <a href="YOUR_GITHUB_LINK">View on GitHub</a>
+                    </div>
+                </div>  
+
+                <div class="project-video">
+                    <!-- Video will go here later -->
+                </div>
             </div>
-        </div>
 
-        <!-- Duplicate .project block for more projects -->
-
-    </main>
-
-    <footer>
-        &copy; 2025 Karson Du</a>
-    </footer>
-
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
