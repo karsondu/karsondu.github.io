@@ -1,5 +1,17 @@
 body {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
 }
 
 .top-bar {
@@ -17,37 +29,46 @@ body {
     text-decoration: none;
 }
 
+.bottom-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #B3B7EE;
+    margin-top: auto;
+}
+
 .intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1800px;
+    width: 90%;
     min-height: 400px;
     margin: 50px auto;
     border: 3px solid black;
-    background-color:#B3B7EE;
+    background-color: #B3B7EE;
 }
 
 .intro-text {
     font-size: 20px;
     padding-left: 50px;
     width: 100%;
-    color:black;
+    color: black;
 }
+
 .intro-text a {
     color: black;
     text-decoration: none;
 }
+
 .intro-text .fa-envelope {
-    padding-left:3px;
+    padding-left: 3px;
     color: black;
 }
+
 .intro-text .fa-linkedin {
-    padding-left:px;
     color: #0A66C2;
 }
+
 .intro-text .fa-github {
-    padding-left:px;
     color: white;
 }
 
@@ -62,10 +83,16 @@ body {
     object-fit: cover;
 }
 
+.projecth1 {
+    width: 90%;
+    margin: 20px auto;
+}
+
 .project {
+    width: 90%;
+    margin: 50px auto;
     border: 2px solid black;
     padding: 20px;
-    margin: 20px 0;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -101,6 +128,7 @@ body {
 .project.expanded .project-details {
     display: block;
 }
+
 .project.expanded .project-summary {
     display: none;
 }
@@ -136,23 +164,26 @@ body {
 }
 
 .education {
-    align-items: center;
-    justify-content: space-between;
+    width: 90%;
     margin: 50px auto;
     border: 3px solid black;
-    background-color:#B3B7EE;
+    background-color: #B3B7EE;
 }
 
 .education_text {
     padding-left: 10px;
 }
 
+.cvh1 {
+    width: 90%;
+    margin: 20px auto;
+}
+
 .experience {
-    align-items: center;
-    justify-content: space-between;
+    width: 90%;
     margin: 50px auto;
     border: 3px solid black;
-    background-color:#B3B7EE;
+    background-color: #B3B7EE;
 }
 
 .experience_text {
@@ -160,14 +191,12 @@ body {
 }
 
 .skills {
-    align-items: center;
-    justify-content: space-between;
+    width: 90%;
     margin: 50px auto;
     border: 3px solid black;
-    background-color:#B3B7EE;
+    background-color: #B3B7EE;
 }
 
 .skills_text {
     padding-left: 10px;
 }
-
